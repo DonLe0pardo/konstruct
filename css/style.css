@@ -122,8 +122,6 @@ li{
     background-repeat: no-repeat;
     /* max-height: 769px; */
     color: #FFFFFF;
-    /* background-position: center;
-    width: 100%; */
     background-size: 100% 100%;
     text-align: center;
     
@@ -138,7 +136,7 @@ li{
     flex-direction: column;
     justify-content: space-between;
     height: 768px;
-    /* height: 659px; */
+    height: 827px;
     align-items: center;
     margin-top: 39px;
     margin-bottom: 71px;
@@ -166,8 +164,15 @@ h1{
 
 /* меню из header-------------------*/
 
+.header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+
 .header__menu{
-    padding: 24px 0;
+    padding: 21px 0;
     display: flex;
     justify-content: space-between;
     color: #48555B;
@@ -189,7 +194,7 @@ h1{
 .header__item:hover{
     font-weight: bold;
     color: #00A4E5;
-    transition: 1s;
+    /* transition: 1s; */
     font-size: 13px;
 }
 
@@ -216,6 +221,7 @@ h1{
 
 h3{
     font-size: 18px;
+    letter-spacing: 2.30625px;
     
 }
 .story{
@@ -234,7 +240,7 @@ h3{
 }
 
 .story__title{
-    margin-bottom: 80px;
+    margin-bottom: 65px;
     text-align: center;
     width: 100%;
     
@@ -243,6 +249,7 @@ h3{
 h5{
     font-size: 20px;
     letter-spacing: 0.1875px;
+    margin-bottom: 30px;
 }
 
 .story__content-text{
@@ -261,6 +268,7 @@ h5{
 .story__content{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 
@@ -270,20 +278,19 @@ h5{
 
 
 
-.story__content-img > div{
+.story__content-item{
     margin-left: 20px;
-}
-
-
-
-.story__content-image{
     position: relative;
 }
+
+
+
+
 .story__content-string{
     position: absolute;
     z-index: 1;
-    margin-top: 15px;
-    margin-left: 10px;
+    top: 15px;
+    left: 10px;
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.1875px;
@@ -320,15 +327,18 @@ h5{
 
 }
 
-.capabilities__content{
+/* .capabilities__content{
     display: flex;
     justify-content: space-between;
-}
+    
+} */
 
 .capabilities__content-item{
-    max-width: 295px;
+    /* max-width: 295px; */
     border: 1px solid #E6E6E6;
     padding: 38px 22px 39px 22px;
+    margin: 0 9px 9px;
+    outline: none;
 }
 
 .capabilities__content-item > p{
@@ -341,7 +351,7 @@ h6{
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.426667px;
-    margin: 25px 0 13px;
+    margin: 20px 0 13px;
 }
 
 
@@ -365,7 +375,7 @@ h6{
 .amazing{
     background-image: url(../img/amazing_bg.png);
     height: 498.24px;
-    background-size: 100% 100%;
+    background-size: 100% 101%;
     display: flex;
     text-align: center;
 }
@@ -386,7 +396,7 @@ h2{
     color: #48555B;
 }
 
-/* секция signup-------------------*/
+/* --------- футер-------------------*/
 
 .signup{
     background-color: #171819;
@@ -451,7 +461,7 @@ input[type="submit"]:hover{
     
 }
 
-/* секция contacts-------------------*/
+/* ---------- contacts-------------------*/
 
 
 .contacts{
@@ -468,6 +478,7 @@ input[type="submit"]:hover{
     margin: 42px 0 40px;
     display: flex;
     justify-content: space-between;
+    text-align: left;
 }
 
 .contacts__block1{
@@ -478,7 +489,7 @@ input[type="submit"]:hover{
 .contacts__block1 > p:first-child{
     line-height: 15px;
     letter-spacing: 0.846154px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .contacts__block1 > p:last-child{
     line-height: 19px;
@@ -532,13 +543,6 @@ input[type="submit"]:hover{
     justify-content: space-between;
 }
 
-/* .contacts__block3-img{
-    margin: 0 24px;
-} */
-
-/* .contacts__block3-icons > img{
-    margin-right: 24px;
-} */
 
 .contacts__block3-item > li{
     line-height: 15px;
@@ -551,17 +555,23 @@ input[type="submit"]:hover{
     width: 87px;
 }
 
-/* секция footer-------------------*/
+/* -------------------*/
 
 
-.footer{
+.footer__bottom-part{
     padding: 22px 0;
     text-align: center;
-    background-color: #171819;
+    /* background-color: #171819; */
     color: #FFFFFF;
     font-size: 11px;
     letter-spacing: 0.846154px;
 }
+
+
+
+
+
+
 
 
 
@@ -583,6 +593,11 @@ input[type="submit"]:hover{
 
     .contacts__block2{
         margin-left: 30px;
+    }
+
+    .capabilities__content-item{
+        max-height: 280px;
+        overflow: auto;
     }
 }
 
@@ -607,6 +622,7 @@ input[type="submit"]:hover{
     .signup__content{
         display: flex;
        flex-direction: column;
+       width: 100%;
     }
 
     .signup__form{
@@ -626,6 +642,12 @@ input[type="submit"]:hover{
 
     .contacts__block3-item{
         height: 150px;
+    }
+
+
+    .capabilities__content-item{
+        max-height: 372px;
+
     }
     
 }
@@ -677,7 +699,6 @@ input[type="submit"]:hover{
     }
 
     .burger_active {
-        /* position: fixed; */
         z-index: 2;
     }
 
@@ -696,10 +717,9 @@ input[type="submit"]:hover{
     }
      
 
-
-
-
-
+    .header__border-line{
+        display: none;
+    }
     .header__items{
         display: none;
     }
@@ -717,18 +737,9 @@ input[type="submit"]:hover{
 
     .capabilities__content-top-right > p{
         margin: 0 0 15px 20px;
-        
-
     }
 
-    .capabilities__content{
-        display: block;
-    }
-    .capabilities__content-item{
-        margin: 0 auto 20px;
-        max-width: 500px;
-    }
-
+   
     .header{
         position: fixed;
         top: 0;
@@ -738,7 +749,7 @@ input[type="submit"]:hover{
         z-index: 100;
     }
     .partner{
-        margin-top: 73px;
+        margin-top: 65px;
     }
 
     .header-mobile{
@@ -757,8 +768,9 @@ input[type="submit"]:hover{
         background-color: #00A4E5;
         text-align: center;
         transition: top 1s ease;
-        padding: 20px 10px;
+        padding: 80px 10px 15px;
         justify-content: space-between;
+        
         
     }
 
@@ -771,22 +783,15 @@ input[type="submit"]:hover{
     }
 
     .header__item-mobile:hover{
-        background-color: #171819;
-        transition: 2s;
-        
-        
+        background-color: #171819; 
         
     }
 
     .header-mobile_active{
-          /* top: 0; */
           transition: top 1s ease;
-          top: 72px;
+          top: 0;
     }
 
-    .signup__content{
-        width: 100%;
-    }
 
     .contacts__content{
         flex-direction: column;
@@ -830,6 +835,13 @@ input[type="submit"]:hover{
     .signup__form{
         width: 100%;
     }
+
+    .story__content-img > div:first-child{
+        margin: 5px;
+
+    }
+
+   
 }
 
 

@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>konstruct</title>
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+
     <script defer src="./js/script.js"></script>
 </head>
 
@@ -14,7 +18,7 @@
 
     <!-- --------------------секция partner-------------------- -->
 
-    <section id="partner" class="partner">
+    <section id="partner_id" class="partner">
         <div class="container">
             <div class="partner__wrapper">
                 <div class="partner__content">
@@ -36,11 +40,11 @@
             <div class="header__menu">
                 <div><img src="./img/logo_black.png" alt="logo_black"></div>
                 <nav class="header__items">
-                    <a class="header__item" href="#partner">HOME</a>
-                    <a class="header__item" href="#story">ABOUT</a>
-                    <a class="header__item" href="#capabilities">SERVICES</a>
-                    <a class="header__item" href="#amazing">WORK</a>
-                    <a class="header__item" href="#contacts">CONTACT</a>
+                    <a class="header__item" href="#partner_id">HOME</a>
+                    <a class="header__item" href="#story_id">ABOUT</a>
+                    <a class="header__item" href="#capabilities_id">SERVICES</a>
+                    <a class="header__item" href="#amazing_id">WORK</a>
+                    <a class="header__item" href="#contacts_id">CONTACT</a>
                 </nav>
                 <div class="burger">
                     <span></span>
@@ -53,17 +57,17 @@
     <!-- -------------------меню для 650px---------------------- -->
     <div class="header-mobile">
         <nav class="header__items-mobile">
-            <a class="header__item-mobile" href="#partner">HOME</a>
-            <a class="header__item-mobile" href="#story">ABOUT</a>
-            <a class="header__item-mobile" href="#capabilities">SERVICES</a>
-            <a class="header__item-mobile" href="#amazing">WORK</a>
-            <a class="header__item-mobile" href="#contacts">CONTACT</a>
+            <a class="header__item-mobile" href="#partner_id">HOME</a>
+            <a class="header__item-mobile" href="#story_id">ABOUT</a>
+            <a class="header__item-mobile" href="#capabilities_id">SERVICES</a>
+            <a class="header__item-mobile" href="#amazing_id">WORK</a>
+            <a class="header__item-mobile" href="#contacts_id">CONTACT</a>
         </nav>
     </div>
 
     <!-- -------------------секция story------------------------ -->
 
-    <section id="story" class="story">
+    <section id="story_id" class="story">
         <div class="container">
             <h3 class="story__title">OUR STORY</h3>
             <div class="story__content">
@@ -79,17 +83,17 @@
                     </p>
                 </div>
                 <div class="story__content-img">
-                    <div>
+                    <div class="story__content-item">
                         <p class="story__content-string">WE PLAN</p>
-                        <img class="story__content-image" src="./img/story_img_1.jpg" alt="img_1">
+                        <img src="./img/story_img_1.jpg" alt="img_1">
                     </div>
-                    <div>
+                    <div class="story__content-item">
                         <p class="story__content-string">WE MANAGE</p>
-                        <img class="story__content-image" src="./img/story_img_2.jpg" alt="img_2">
+                        <img src="./img/story_img_2.jpg" alt="img_2">
                     </div>
-                    <div>
+                    <div class="story__content-item">
                         <p class="story__content-string">WE BUILD</p>
-                        <img class="story__content-image" src="./img/story_img_3.jpg" alt="img_3">
+                        <img src="./img/story_img_3.jpg" alt="img_3">
                     </div>
                 </div>
             </div>
@@ -98,7 +102,7 @@
 
     <!-- -------------------секция capabilities--------------- -->
 
-    <section id="capabilities" class="capabilities">
+    <section id="capabilities_id" class="capabilities">
         <div class="container">
             <div class="capabilities__content-top">
                 <h3 class="capabilities__title">OUR CAPABILITIES</h3>
@@ -138,17 +142,43 @@
                         magna aliquam erat.
                     </p>
                 </div>
+                <div class="capabilities__content-item">
+                    <img src="./img/ico_3.png" alt="ico_3">
+                    <h6>FACTORY CONSTRUCTION AND MODELING</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore
+                        magna aliquam erat.
+                    </p>
+                </div>
+                <div class="capabilities__content-item">
+                    <img src="./img/ico_3.png" alt="ico_3">
+                    <h6>FACTORY CONSTRUCTION AND MODELING</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore
+                        magna aliquam erat.
+                    </p>
+                </div>
+                <div class="capabilities__content-item">
+                    <img src="./img/ico_3.png" alt="ico_3">
+                    <h6>FACTORY CONSTRUCTION AND MODELING</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore
+                        magna aliquam erat.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
 
-    
 
 
     <!-- -------------------секция amazing------------------- -->
 
-    <section id="amazing" class="amazing">
+    <section id="amazing_id" class="amazing">
         <div class="container">
             <div class="amazing__content">
                 <h2 class="amazing__title">Want to build something amazing?</h2>
@@ -157,9 +187,9 @@
         </div>
     </section>
 
-    <!-- -------------------секция signup--------------------- -->
+    <!-- -------------------секция футер--------------------- -->
 
-    <section class="signup">
+    <footer id="contacts_id" class="signup">
         <div class="container">
             <div class="signup__wrapper">
                 <div class="signup__content">
@@ -173,71 +203,76 @@
                 </div>
             </div>
         </div>
-    </section>
 
 
-    <!-- -------------------секция contacts------------------- -->
 
-    <section id="contacts" class="contacts">
-        <div class="container">
-            <div class="contacts__wrapper">
-                <div class="contacts__content">
-                    <div class="contacts__block1">
-                        <p>COMPANY</p>
-                        <img src="./img/footer_logo.png" alt="footer_logo">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit, sed diam nonummy nibh euismod tincidunt ut
-                            laoreet dolore magna aliquam erat.
-                        </p>
-                    </div>
-                    <div class="contacts__block2">
-                        <ul class="contacts__block2-item1">
-                            <li>LINKS</li>
-                            <li>HOME</li>
-                            <li>ABOUT</li>
-                            <li>SERVICES</li>
-                            <li>PROJECTS</li>
-                            <li>CONTACT US</li>
-                        </ul>
-                        <ul class="contacts__block2-item2">
-                            <li>FAQ</li>
-                            <li>TERMS</li>
-                            <li>CAREERS</li>
-                        </ul>
-                        <ul class="contacts__block2-item3">
-                            <li>BLOG</li>
-                            <li>PARTNERS</li>
-                            <li>NEWS</li>
-                        </ul>
-                    </div>
-                    <div class="contacts__block3">
-                        <ul class="contacts__block3-item">
-                            <li>CONTACT US</li>
-                            <li>213 Baker Street Oriel City Kounty
-                                7000 KNW, Kountry Name</li>
-                            <li>+23 994 233 4022</li>
-                            <li>info@konstruct.com</li>
-                        </ul>
-                        <div class="contacts__block3-icons">
-                            <img src="./img/facebook.png" alt="facebook_ico">
-                            <img class="contacts__block3-img" src="./img/twitter.png" alt="twitter_ico">
-                            <img src="./img/google.png" alt="google_ico">
+
+        <!-- -------------------contacts------------------- -->
+
+        <div class="contacts">
+            <div class="container">
+                <div class="contacts__wrapper">
+                    <div class="contacts__content">
+                        <div class="contacts__block1">
+                            <p>COMPANY</p>
+                            <img src="./img/footer_logo.png" alt="footer_logo">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                elit, sed diam nonummy nibh euismod tincidunt ut
+                                laoreet dolore magna aliquam erat.
+                            </p>
+                        </div>
+                        <div class="contacts__block2">
+                            <ul class="contacts__block2-item1">
+                                <li>LINKS</li>
+                                <li>HOME</li>
+                                <li>ABOUT</li>
+                                <li>SERVICES</li>
+                                <li>PROJECTS</li>
+                                <li>CONTACT US</li>
+                            </ul>
+                            <ul class="contacts__block2-item2">
+                                <li>FAQ</li>
+                                <li>TERMS</li>
+                                <li>CAREERS</li>
+                            </ul>
+                            <ul class="contacts__block2-item3">
+                                <li>BLOG</li>
+                                <li>PARTNERS</li>
+                                <li>NEWS</li>
+                            </ul>
+                        </div>
+                        <div class="contacts__block3">
+                            <ul class="contacts__block3-item">
+                                <li>CONTACT US</li>
+                                <li>213 Baker Street Oriel City Kounty
+                                    7000 KNW, Kountry Name</li>
+                                <li>+23 994 233 4022</li>
+                                <li>info@konstruct.com</li>
+                            </ul>
+                            <div class="contacts__block3-icons">
+                                <img src="./img/facebook.png" alt="facebook_ico">
+                                <img class="contacts__block3-img" src="./img/twitter.png" alt="twitter_ico">
+                                <img src="./img/google.png" alt="google_ico">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- -------------------секция футер---------------------- -->
+        <!-- ----------------------------------------- -->
 
-    <footer class="footer">
-        <div class="container">
+
+        <div class="footer__bottom-part">
             <p>© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</p>
         </div>
     </footer>
 
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="./slick/slick.min.js"></script>
 </body>
 
 </html>

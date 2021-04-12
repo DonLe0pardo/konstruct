@@ -12,9 +12,27 @@ burger.addEventListener('click', () => {
 
 
 
-
-
-
+$('.capabilities__content').slick({
+  infinite: true,
+  dots: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 950,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
+});
 
 
 
