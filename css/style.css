@@ -327,14 +327,9 @@ h5{
 
 }
 
-/* .capabilities__content{
-    display: flex;
-    justify-content: space-between;
-    
-} */
+
 
 .capabilities__content-item{
-    /* max-width: 295px; */
     border: 1px solid #E6E6E6;
     padding: 38px 22px 39px 22px;
     margin: 0 9px 9px;
@@ -433,10 +428,11 @@ input{
 input[type="email"]{
     width: 250px;
     /* height: 40px; */
-    padding: 11px 5px 10px 16px;
+    padding: 10px 5px 11px 16px;
     font-size: 14px;
     line-height: 19px;
     color: #48555B;
+    font-family: 'Open Sans';
 }
 
 input[type="submit"]{
@@ -536,7 +532,6 @@ input[type="submit"]:hover{
     line-height: 16px;
     letter-spacing: 0.846154px;
     max-width: 113px;
-    /* margin-right: 46px; */
     margin-right: 74px;
     display: flex;
     flex-direction: column;
@@ -569,13 +564,34 @@ input[type="submit"]:hover{
 
 
 
+/* ------------------------- */
 
+.feedback__form-input > input{
+    width: 50%;
+    height: 40px;
+    padding-left: 15px;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    color: #48555B;
+}
 
+.feedback__form > form{
+    margin-bottom: 30px;
+    width: 100%;  
+}
 
-
-
-
-
+.feedback__form-input{
+    display: flex;
+   
+}
+.feedback__form-textarea{
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    color: #48555B;
+    resize: none;
+}
 
 
 
@@ -627,6 +643,7 @@ input[type="submit"]:hover{
 
     .signup__form{
         margin-top: 20px;
+        
     }
 
     .contacts__content{
@@ -829,7 +846,7 @@ input[type="submit"]:hover{
     }
 
     input[type="submit"]{
-        width: 35%;
+        width: 37%;
     }
 
     .signup__form{

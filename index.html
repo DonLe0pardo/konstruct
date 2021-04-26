@@ -11,7 +11,12 @@
     <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
 
-    <script defer src="./js/script.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    
+    
+    
+    
 </head>
 
 <body>
@@ -196,10 +201,22 @@
                     <p>Newsletter Signup</p>
                     <div class="signup__form">
                         <form action="#">
-                            <input type="email" name="email" placeholder="test@youremail.com">
-                            <input type="submit" value="SIGNUP">
+                            <input id="input_email" required type="email" name="email" placeholder="test@youremail.com">
+                            <input id="send1" type="submit" value="SIGNUP">
                         </form>
                     </div>
+                </div>
+                <div class="feedback__form">
+                    <form action="#">
+                        <div class="feedback__form-input">
+                            <input type="text" placeholder="Name">
+                            <input type="tel" placeholder="Phone number">
+                        </div>
+                        <textarea class="feedback__form-textarea" name="#" maxlength="100" 
+                         rows="3" placeholder="Comment"></textarea>
+                         <!-- <button class="button">Send</button> -->
+                         <input id="send2" type="submit" value="Send">
+                    </form>
                 </div>
             </div>
         </div>
@@ -269,10 +286,24 @@
     </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+
+    
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
+
+        
     <script src="./slick/slick.min.js"></script>
+
+    
+
+    <script src="./js/script.js"></script>
+
+   
+    
 </body>
 
 </html>

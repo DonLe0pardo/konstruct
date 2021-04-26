@@ -11,6 +11,26 @@ burger.addEventListener('click', () => {
 
 
 
+// let text = document.querySelector('.signup__content > p');
+// let inputEmail = document.querySelector('#input_email');
+
+
+
+// btn.addEventListener('click', () => {
+//   text.innerHTML = "Ваш e-mail отправлен";
+// });
+
+
+
+
+
+
+
+
+
+
+// slick
+
 
 $('.capabilities__content').slick({
   infinite: true,
@@ -33,6 +53,62 @@ $('.capabilities__content').slick({
     }
   ]
 });
+
+
+
+
+
+
+let btn_1 = document.querySelector('#send1');
+let title = document.querySelector('.signup__content > p');
+
+   btn_1.addEventListener('click', () => {
+
+    title.innerHTML = "Ваш e-mail отправлен";
+
+
+ 
+$.ajax({
+  
+    url: "test.html",
+ 
+    context: document.body,
+  
+    success: function(){
+  
+      $(this).addClass("done");
+       
+    }
+    
+    
+  });   
+
+  
+});
+
+
+
+
+let btn_2 = document.querySelector('#send2');
+
+   btn_2.addEventListener('click', () => {
+ 
+$.ajax({
+  
+    url: "test.html",
+ 
+    context: document.body,
+  
+    success: function(){
+  
+      $(this).addClass("done");
+      
+    }
+
+  });   
+  
+});
+
 
 
 
