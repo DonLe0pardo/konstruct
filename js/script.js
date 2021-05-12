@@ -59,55 +59,78 @@ $('.capabilities__content').slick({
 
 
 
-let btn_1 = document.querySelector('#send1');
-let title = document.querySelector('.signup__content > p');
+// let btn_1 = document.querySelector('#send1');
+// let title = document.querySelector('.signup__content > p');
 
-   btn_1.addEventListener('click', () => {
+//    btn_1.addEventListener('click', () => {
 
-    title.innerHTML = "Ваш e-mail отправлен";
+//     title.innerHTML = "Ваш e-mail отправлен";
 
 
  
-$.ajax({
+// $.ajax({
   
-    url: "test.html",
+//     url: "test.html",
+
+//     data: {"id": 42}, 
  
-    context: document.body,
+//     context: document.body,
   
-    success: function(){
+//     success: function(){
   
-      $(this).addClass("done");
+//       $(this).addClass("done");
        
-    }
+//     }
     
     
-  });   
+//   });   
 
   
-});
+// });
 
 
 
 
-let btn_2 = document.querySelector('#send2');
+// let btn_2 = document.querySelector('#send2');
 
-   btn_2.addEventListener('click', () => {
+//    btn_2.addEventListener('click', () => {
  
-$.ajax({
+// $.ajax({
   
-    url: "test.html",
+//     url: "test.html",
  
-    context: document.body,
+//     context: document.body,
   
-    success: function(){
+//     success: function(){
   
-      $(this).addClass("done");
+//       $(this).addClass("done");
       
-    }
+//     }
 
-  });   
+//   });   
   
+// });
+
+
+
+
+$("#form").submit(function() {
+   $.ajax({
+    type: "POST",
+    url: "test.html",
+    data: $(this).serialize()
+   }).done(function() {
+     alert("Спасибо");
+   });
+   return false;
 });
+
+
+
+
+
+
+
 
 
 
